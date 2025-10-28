@@ -107,10 +107,9 @@ body {
 .port-card .image img {
     width: 100%;
     height: auto;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    display: block;
+    border-radius: 20px;
     object-fit: contain;
+    display: block;
 }
 /* Services section styles */
 .services {
@@ -291,3 +290,4 @@ body {
     color: #363D73;
 
 }
+
