@@ -105,10 +105,12 @@ body {
     width: 100%;
 }
 .port-card .image img {
-    height: 200px;
     width: 100%;
+    height: auto;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+    display: block;
+    object-fit: contain;
 }
 /* Services section styles */
 .services {
@@ -287,4 +289,5 @@ body {
 }
 .blue-text {
     color: #363D73;
+
 }
