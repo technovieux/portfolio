@@ -20,7 +20,7 @@ function telechargerPDF() {
     const pdfurlen = './images_files/CV_mathias_cassegrain_en.pdf';
     const pdfurlfr = './images_files/CV_mathias_cassegrain_fr.pdf';
     const link = document.createElement('a');
-    link.href = pdfUrlEn;
+    link.href = pdfurlen;
     if (userLang.toLowerCase().startsWith('fr')) {
         link.href = pdfurlfr;
     }
@@ -30,4 +30,5 @@ function telechargerPDF() {
     document.body.removeChild(link);
 
 }
+
 
