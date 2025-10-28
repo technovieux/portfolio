@@ -17,11 +17,18 @@ hamburger.addEventListener('click', function () {
 });
 
 function telechargerPDF() {
-    const pdfUrl = './images_files/CV_mathias_cassegrain.pdf'; // Replace with your PDF URL
+    const pdfUrlEn = './images_files/CV_mathias_cassegrain_en.pdf';
+    const pdfUrlFr = './images_files/CV_mathias_cassegrain_fr.pdf';
     const link = document.createElement('a');
-    link.href = pdfUrl;
+    let fileName;
+    fileName = pdfUrlEn;
+    if (userLang.toLowerCase().startsWith('fr')) {
+        fileName = pdfUrlFr;
+    }
+    link.href = fileName;
     link.download = 'CV_mathias_cassegrain.pdf'; // Optional: specify a default file name
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+
 }
