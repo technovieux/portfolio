@@ -87,11 +87,11 @@
         flex-direction: column;
     }
     .about.about-text {
-        width: 90%;
+        width: 100%;
         padding: 1rem;
     }
     .about .about-image img {
-        width: 90%;
+        width: 100%;
         padding: 1rem;
     }
     .services {
@@ -135,4 +135,5 @@
     .footer-list-items {
         margin: 0;
     }
+
 }
