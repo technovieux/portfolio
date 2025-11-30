@@ -1,6 +1,7 @@
 const hamburger = document.getElementById('hamburger');
 const menu = document.querySelector('.menu');
 const menuLinks = document.querySelectorAll('.menu-list-items a');
+const userLang = navigator.language || navigator.userLanguage;
 
 hamburger.addEventListener('click', function () {
     const hamIcon = this.querySelector('.hamburger-icon');
@@ -45,5 +46,6 @@ function fermerMenu() {
 menuLinks.forEach(link => {
     link.addEventListener('click', fermerMenu);
 });
+
 
 
