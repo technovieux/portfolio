@@ -79,16 +79,15 @@ body {
     box-sizing: border-box;
 }
 .about .about-image {
-    width: 50%; /* Occupe 50% de la largeur du conteneur .about */
+    width: 50%;
     padding: 5rem;
     box-sizing: border-box;
 }
 
-/* S'assurer que l'image à l'intérieur est responsive */
 .about .about-image img {
     max-width: 100%;
     height: auto;
-    display: block; /* Supprime l'espace sous l'image */
+    display: block;
 }
 
 
