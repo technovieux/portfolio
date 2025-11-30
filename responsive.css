@@ -88,11 +88,11 @@
     }
     .about.about-text {
         width: 100%;
-        padding: 1rem;
+        padding: 0;
     }
     .about .about-image img {
         width: 100%;
-        padding: 1rem;
+        padding: 0;
     }
     .services {
         padding: 0;
@@ -137,3 +137,4 @@
     }
 
 }
+
