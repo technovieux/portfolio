@@ -69,19 +69,27 @@ body {
     background-image: linear-gradient(45deg, #363D73, #2794B3);
     justify-content: space-between;
     width: 100%;
+    flex-wrap: wrap;
+    padding: 0;
 }
 .about .about-text {
-    width: 450px;
+    width: 50%;
     color: #fff;
-    padding: 5rem 5rem 5rem 5rem;
-
+    padding: 5rem;
+    box-sizing: border-box;
 }
+.about .about-image {
+    width: 50%; /* Occupe 50% de la largeur du conteneur .about */
+    padding: 5rem;
+    box-sizing: border-box;
+}
+
+/* S'assurer que l'image à l'intérieur est responsive */
 .about .about-image img {
-    height: 400px;
-    width: 450px;
-    padding: 5rem 5rem 5rem 1rem;
+    max-width: 100%;
+    height: auto;
+    display: block; /* Supprime l'espace sous l'image */
 }
-
 
 
 /* Projects section styles */
