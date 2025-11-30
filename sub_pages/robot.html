@@ -51,9 +51,9 @@
     </header>
 
 
-    
-    
-    <section id="home" class="hero" style="background-image: url('../images_files/PCBdesign.jpg');
+
+
+    <section id="home" class="hero" style="background-image: url('../images_files/robot.jpg');
                                            background-repeat: no-repeat;
                                            background-size: 100% 100%;
                                            width: 100%;
@@ -61,63 +61,75 @@
                                            display: flex;
                                            align-items: center;
                                            justify-content: start;
-                                           margin: 0;">
+                                           margin: 0 0;">
 
         <div class="intro">
             <div class="headings">
-                <h1 class="my-heading">PCB Design</h1>
+                <h1 class="my-heading">Humanoid</h1>
+                <h1 class="my-heading">Robot</h1>
                 <h4 class="sub-heading">
-                    The art of making circuit board
+                    a friend of plastic and wires
                 </h4>
             </div>
         </div>
 
     </section>
 
-    
+
     <section id="more-details" class="more-details">
         <div class="more-details-text">
             <h1 class="my-heading">More details</h1>
             <p class="lead-para">
-                During my STI2D Baccalaureate, I often had to draw, design, and correct electrical diagrams for robots, alarms, and RFID badges, that is why I started to learn how to use KiCad.
-
+                Ever since I was little, I've loved robot movies like Chappie and Real Steel. I find it fascinating to
+                replicate human behavior with metal and lines of code.
             </p>
             <p>
-                After graduating, I went on to study electrical engineering and industrial computing to deepen my knowledge of electronics. During those years, I improved my use of KiCad and also learned how to use LTspice to simulate electrical circuits and Autodesk Eagle to create printed circuit boards.
+                In 2021, a friend and I built a prototype animatronic eye, designed by Will Cogley. That's when my
+                desire to build things really took off, and I started learning about modeling and 3D printing.
             </p>
             <p>
-                This knowledge has been useful in creating a robot pilot card and sensor management card (preview), as well as in another audio amplifier card project to modulate/modify and improve an audio signal.
+                In 2022, I searched for content on robotics and 3D printing, and I discovered INMOOV, a robot that can
+                be built and printed in 3D. I started printing and assembling the parts so that it now looks like a
+                humanoid.
+            </p>
+            <p>
+                After that, I started looking into programming, wondering how it was possible to code intelligence with
+                code and whether it could be possible.
+                In 2023, Meta released Ollama, a local AI system, which was exactly what I needed, so I went back to
+                coding and combined a set of subsystems so that it could hear, think, and speak. Vision was also in
+                development, but it wasn't connected to thinking. However, it could detect objects and display them in
+                real time.
             </p>
 
 
         </div>
     </section>
 
-    
+
 
     <section id="more-images" class="more-images">
         <div class="more-images-text">
 
             <h1 class="my-heading">More images</h1>
-            
-            <div class="viewer-container" id="visionneuse-pcbdesign">
-  
+
+            <div class="viewer-container" id="visionneuse-robot">
+
                 <div class="main-display">
-                    <button id="prev-btn" class="nav-btn prev-btn">❮</button> 
-    
+                    <button id="prev-btn" class="nav-btn prev-btn">❮</button>
+
                     <div class="media-content">
                         <img id="main-image" src="" alt="Image ou vidéo principale" style="display: none;">
                         <video id="main-video" src="" controls style="display: none;"></video>
                     </div>
-    
+
                     <button id="next-btn" class="nav-btn next-btn">❯</button>
                 </div>
-  
+
                 <div class="media-list" id="media-list">
                 </div>
 
             </div>
-        
+
 
         </div>
     </section>
@@ -125,7 +137,8 @@
 
 
     <div id="home-button" class="home-button">
-        <button class="btn ghost-btn" id="ghost-home-btn" onclick="window.location.href='../index.html#projects';">Back to home</button>
+        <button class="btn ghost-btn" id="ghost-home-btn" onclick="window.location.href='../index.html#projects';">Back
+            to home</button>
     </div>
 
 
@@ -139,7 +152,8 @@
                 <div class="footer-menu">
                     <ul class="footer-menu-list">
                         <li class="footer-list-items">
-                            <a class="footer-links" target="_blank" href="https://www.facebook.com/mathias.cassegrain/about">
+                            <a class="footer-links" target="_blank"
+                                href="https://www.facebook.com/mathias.cassegrain/about">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
                         </li>
@@ -149,7 +163,8 @@
                             </a>
                         </li>
                         <li class="footer-list-items">
-                            <a class="footer-links" target="_blank" href="https://www.linkedin.com/in/mathias-cassegrain-90246328b/">
+                            <a class="footer-links" target="_blank"
+                                href="https://www.linkedin.com/in/mathias-cassegrain-90246328b/">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
                         </li>
@@ -162,19 +177,31 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
         integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-    </script>
+        </script>
     <script src="script.js"></script>
     <script src="viewer.js"></script>
-    
+
     <script>
-        const pcbdesignMedia = [
-            { type: 'image', src: '../images_files/PCBdesign.jpg', name: 'aperçu' }
-            //{ type: 'video', src: '../videos/pcb_test_video.mp4', name: 'Test en Vidéo' },
+        const robotMedia = [
+            { type: 'image', src: '../images_files/robot.jpg', name: 'aperçu' },
+            { type: 'image', src: '../images_files/robot/assemblage-1.jpg', name: 'assemblage 1' },
+            { type: 'image', src: '../images_files/robot/assemblage-2.jpg', name: 'assemblage 2' },
+            { type: 'image', src: '../images_files/robot/assemblage-3.jpg', name: 'assemblage 3' },
+            { type: 'image', src: '../images_files/robot/assemblage-4.jpg', name: 'assemblage 4' },
+            { type: 'image', src: '../images_files/robot/assemblage-5.jpg', name: 'assemblage 5' },
+            { type: 'image', src: '../images_files/robot/assemblage-6.jpg', name: 'assemblage 6' },
+            { type: 'image', src: '../images_files/robot/assemblage-7.jpg', name: 'assemblage 7' },
+            { type: 'image', src: '../images_files/robot/assemblage-8.jpg', name: 'assemblage 8' },
+            { type: 'image', src: '../images_files/robot/assemblage-9.jpg', name: 'assemblage 9' },
+            { type: 'image', src: '../images_files/robot/tete-1.jpg', name: 'tête 1' },
+            { type: 'image', src: '../images_files/robot/tete-2.jpg', name: 'tête 2' },
+            { type: 'image', src: '../images_files/robot/tete-3.jpg', name: 'tête 3' },
+            { type: 'image', src: '../images_files/robot/reparation.jpeg', name: 'reparation' }
         ];
 
         // Appel de la fonction pour initialiser la visionneuse avec les données spécifiques
         // 'visionneuse-principale' est l'ID du conteneur dans le HTML
-        initMediaViewer(pcbdesignMedia, 'visionneuse-pcbdesign');
+        initMediaViewer(robotMedia, 'visionneuse-robot');
     </script>
 </body>
 

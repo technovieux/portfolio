@@ -53,7 +53,7 @@
 
     
     
-    <section id="home" class="hero" style="background-image: url('../images_files/PCBdesign.jpg');
+    <section id="home" class="hero" style="background-image: url('../images_files/aquarium.jpg');
                                            background-repeat: no-repeat;
                                            background-size: 100% 100%;
                                            width: 100%;
@@ -61,17 +61,17 @@
                                            display: flex;
                                            align-items: center;
                                            justify-content: start;
-                                           margin: 0;">
+                                           margin: 0rem 0;">
 
         <div class="intro">
             <div class="headings">
-                <h1 class="my-heading">PCB Design</h1>
+                <h1 class="my-heading">Stand-alone</h1>
+                <h1 class="my-heading">Aquarium</h1>
                 <h4 class="sub-heading">
-                    The art of making circuit board
+                    the fish are always kept in the best conditions
                 </h4>
             </div>
         </div>
-
     </section>
 
     
@@ -79,14 +79,13 @@
         <div class="more-details-text">
             <h1 class="my-heading">More details</h1>
             <p class="lead-para">
-                During my STI2D Baccalaureate, I often had to draw, design, and correct electrical diagrams for robots, alarms, and RFID badges, that is why I started to learn how to use KiCad.
-
+                Alongside my studies, I sometimes take on more personal projects, or projects that people ask me to do. That was the case with this aquarium, which was built for a fishing enthusiast who wanted to keep his fish, except that the aquarium was in the garage, so it was very cold. 
             </p>
             <p>
-                After graduating, I went on to study electrical engineering and industrial computing to deepen my knowledge of electronics. During those years, I improved my use of KiCad and also learned how to use LTspice to simulate electrical circuits and Autodesk Eagle to create printed circuit boards.
+                I had to manage a pump, heating, and filtration system. In addition to the power supply, I had to manage the control of each piece of equipment with a box that displayed all the information from the sensors (temperature, time, water acidity, etc.) and had an automatic and manual mode. 
             </p>
             <p>
-                This knowledge has been useful in creating a robot pilot card and sensor management card (preview), as well as in another audio amplifier card project to modulate/modify and improve an audio signal.
+                It was possible to run the systems automatically at a certain time or activate them manually.
             </p>
 
 
@@ -100,7 +99,7 @@
 
             <h1 class="my-heading">More images</h1>
             
-            <div class="viewer-container" id="visionneuse-pcbdesign">
+            <div class="viewer-container" id="visionneuse-aquarium">
   
                 <div class="main-display">
                     <button id="prev-btn" class="nav-btn prev-btn">❮</button> 
@@ -167,14 +166,20 @@
     <script src="viewer.js"></script>
     
     <script>
-        const pcbdesignMedia = [
-            { type: 'image', src: '../images_files/PCBdesign.jpg', name: 'aperçu' }
-            //{ type: 'video', src: '../videos/pcb_test_video.mp4', name: 'Test en Vidéo' },
+        const aquariumMedia = [
+            { type: 'image', src: '../images_files/aquarium.jpg', name: 'aperçu' },
+            { type: 'image', src: '../images_files/aquarium/aquarium-1.jpg', name: 'aquarium 1' },
+            { type: 'image', src: '../images_files/aquarium/aquarium-2.jpg', name: 'aquarium 2' },
+            { type: 'image', src: '../images_files/aquarium/boitier.jpg', name: 'boitier' },
+            { type: 'image', src: '../images_files/aquarium/capteurs.jpg', name: 'capteurs' },
+            { type: 'image', src: '../images_files/aquarium/prises.jpg', name: 'prises' },
+            { type: 'image', src: '../images_files/aquarium/systemes.jpg', name: 'systemes' }
+            
         ];
 
         // Appel de la fonction pour initialiser la visionneuse avec les données spécifiques
         // 'visionneuse-principale' est l'ID du conteneur dans le HTML
-        initMediaViewer(pcbdesignMedia, 'visionneuse-pcbdesign');
+        initMediaViewer(aquariumMedia, 'visionneuse-aquarium');
     </script>
 </body>
 

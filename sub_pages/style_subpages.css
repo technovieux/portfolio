@@ -16,6 +16,7 @@ body {
     width: 100%;
     background-image: linear-gradient(90deg, #0046a8, #4b8fcf, #35A99C);
     background-color: transparent;
+    z-index: 100;
 }
 .logo {
     padding: 0 5rem;
@@ -69,39 +70,119 @@ body {
     display: flex;
     align-items: center;
     background-image: linear-gradient(45deg, #363D73, #2794B3);
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
 }
 .more-details .more-details-text {
-    width: 450px;
+    width: 100%;
     color: #fff;
-    padding: 5rem 1rem 5rem 5rem;
-}
-.more-details .more-details-image img {
-    height: 400px;
-    width: 450px;
-    padding: 5rem 5rem 5rem 1rem;
+    padding: 5rem 5rem 5rem 5rem;
 }
 
 
-/* more images section styles */
+/* --- more images section styles --- */
 .more-images {
     display: flex;
+    text-align: center;
     align-items: center;
     background-image: linear-gradient(45deg, #2794B3, #363D73);
-    justify-content: space-between;
+    justify-content: center; /* Centre le contenu de cette section */
     width: 100%;
 }
 .more-images .more-images-text {
-    width: 450px;
+    /* Suppression du width fixe, utilisation d'une max-width si nécessaire */
+    max-width: 900px; /* Par exemple */
+    width: 100%;
     color: #fff;
-    padding: 5rem 1rem 5rem 5rem;
+    /* Rendre le padding symétrique (si vous le souhaitez) */
+    padding: 5rem 1rem; 
 }
-.more-images .more-images-image img {
-    height: 400px;
-    width: 450px;
-    padding: 5rem 5rem 5rem 1rem;
+
+
+/* --- Styles Généraux de la Visionneuse --- */
+.viewer-container {
+    max-width: 600px;
+    margin: 10px auto; /* Centrage horizontal de la visionneuse */
+    font-family: sans-serif;
+    text-align: center;
+    z-index: 1;
 }
+.main-display {
+    position: relative;
+    width: 100%; /* Corrigé : pour rester à l'intérieur du conteneur parent */
+    height: 450px; 
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    margin: 50px auto; 
+    /*border: 1px solid #ddd;*/
+}
+
+.media-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 50px;
+}
+.main-display img, .main-display video {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+
+
+
+
+
+/* --- Styles des Boutons de Navigation (Flèches) --- */
+.nav-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: 1px solid #ddd;
+    padding: 0;
+    font-size: 2em;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    transition: background-color 0.3s ease;
+    border-radius: 50%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0; 
+    flex-shrink: 0;
+
+}
+.nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* --- Styles des Boutons de la Liste (Miniatures) --- */
+.media-list button {
+    padding: 8px 12px;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.media-list button.active { /* Bouton actuellement sélectionné */
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+.media-list button:hover:not(.active) {
+    background-color: #e0e0e0;
+}
+
+
 
 
 
@@ -125,10 +206,17 @@ body {
 .home-button {
     display: flex;
     align-items: center;
+    text-align: center;
     background-image: linear-gradient(45deg, #363D73, #2794B3, #363D73);
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
+  /* Pour voir l'effet du centrage vertical, le conteneur doit avoir une hauteur */
+    height: 75px; 
 }
+
+
+
+
 
 /* Footer Styles */
 .footer {
@@ -155,6 +243,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    
+}
+.footer-content {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;    
+    flex-direction: row; 
+    flex-wrap: wrap; 
+}
+.footer-content h4 {
+    margin: 0;
+    font-weight: normal; 
+    font-size: 1rem;
 }
 .footer-menu {
     padding: 0 5rem;
@@ -173,12 +274,28 @@ body {
 .my-heading {
     font-size: 2.5rem;
     margin: 0;
+    color: rgb(255, 255, 255);
+}
+.intro .my-heading  {
+    text-shadow: 
+        -2px -2px 0 #000,  /* Haut-Gauche */
+         2px -2px 0 #000,  /* Haut-Droite */
+        -2px  2px 0 #000,  /* Bas-Gauche */
+         2px  2px 0 #000;  /* Bas-Droite */
 }
 .sub-heading {
     margin: 0;
     font-size: 0.8rem;
-    color: #ccc;
+    color: #fff;
     font-weight: lighter;
+}
+.intro .sub-heading  {
+    text-shadow: 
+        -2px -2px 0 #000,  /* Haut-Gauche */
+         2px -2px 0 #000,  /* Haut-Droite */
+        -2px  2px 0 #000,  /* Bas-Gauche */
+         2px  2px 0 #000;  /* Bas-Droite */
+    background-color: #000;
 }
 .links:hover {
     border-bottom: 2px solid #fff;
