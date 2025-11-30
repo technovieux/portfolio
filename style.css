@@ -89,9 +89,12 @@ body {
     width: 450px;
     padding: 5rem 5rem 5rem 1rem;
 }
-/* Portfolio section styles */
-.portfolio {
-    margin: 4.8rem 0;
+
+
+
+/* Projects section styles */
+.projects {
+    margin: 0rem 0;
     padding: 0 5rem;
 }
 .port-card {
@@ -111,6 +114,15 @@ body {
     object-fit: contain;
     display: block;
 }
+
+.projects-footing {
+    margin-top: 1rem;
+    height: 50px;
+}
+
+
+
+
 /* Services section styles */
 .services {
     display: flex;
@@ -180,6 +192,9 @@ body {
 .contact-details {
     width: 50%;
 }
+
+
+
 /* Footer Styles */
 .footer {
     background-color: #000;
@@ -206,13 +221,27 @@ body {
     align-items: center;
     justify-content: center;
 }
+.footer-content {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;    
+    flex-direction: row; 
+    flex-wrap: wrap; 
+}
+.footer-content h4 {
+    margin: 0;
+    font-weight: normal; 
+    font-size: 1rem;
+}
 .footer-menu {
-    padding: 0 5rem;
+    padding: 0 4rem;
 }
 .footer-menu .footer-menu-list {
     display: flex;
     list-style: none;
 }
+
+
 /* utility classes */
 .greet-heading {
     font-size: 1.3rem;

@@ -20,7 +20,7 @@
     .menu .menu-list {
         flex-direction: column;
     }
-    .portfolio {
+    .projects {
         padding: 0;
     }
 
@@ -80,7 +80,7 @@
         display: block;
         padding: 0 2rem;
     }
-    .portfolio {
+    .projects {
         padding: 0;
     }
     .about {

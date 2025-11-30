@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Mathias' Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
-    <link rel="icon" href="tabicon.png" type="image/png">
+    <link rel="icon" href="./images_files/tabicon.ico" type="image/ico">
 </head>
 
 <body>
@@ -31,7 +31,7 @@
                             Home</a>
                     </li>
                     <li class="menu-list-items">
-                        <a class="links" href="#portfolio">
+                        <a class="links" href="#projects">
                             Projects</a>
                     </li>
                     <li class="menu-list-items">
@@ -74,29 +74,26 @@
 
 
 
-    <!-- Portfolio Section -->
-    <section class="portfolio" id="portfolio">
-        <div class="portfolio-heading">
+
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="projects-heading">
             <h1 class="my-heading text-center">some projects</h1>
         </div>
-        <div class="portfolio-content">
+        <div class="projects-content">
             <div class="my-row">
-
                 <div class="my-col">
-
                     <div class="my-card port-card" onclick="window.location.href='./sub_pages/pcbdesign.html';">
                         <div class="image">
                             <img src="./images_files/PCBdesign.jpg" alt="PCB Design Image">
                         </div>
                         <h3 class="greet-heading blue-text">PCB Design</h3>
                         <p class="small-para blue-text">Design of a little card to control a robot</p>
-
                     </div>
-
                 </div>
-
                 <div class="my-col">
-                    <div class="my-card port-card">
+                    <div class="my-card port-card" onclick="window.location.href='./sub_pages/aquarium.html';">
                         <div class="image">
                             <img src="./images_files/aquarium.jpg" alt="stand-alone aquarium Image">
                         </div>
@@ -105,9 +102,9 @@
                     </div>
                 </div>
                 <div class="my-col">
-                    <div class="my-card port-card">
+                    <div class="my-card port-card" onclick="window.location.href='./sub_pages/robot.html';">
                         <div class="image">
-                            <img src="./images_files/robot.png" alt="humanoid robot Image">
+                            <img src="./images_files/robot.jpg" alt="humanoid robot Image">
                         </div>
                         <h3 class="greet-heading blue-text">humanoid robot</h3>
                         <p class="small-para blue-text">a robot that can recognize objects, move its hands, head, jaw, and eyes</p>
@@ -116,35 +113,45 @@
             </div>
             <div class="my-row">
                 <div class="my-col">
-                    <div class="my-card port-card">
+                    <div class="my-card port-card" onclick="window.location.href='./sub_pages/hand.html';">
                         <div class="image">
                             <img src="./images_files/hand gesture gif.gif" alt="Real-time recognition Image">
                         </div>
-                        <h3 class="greet-heading blue-text">Hand recognition</h3>
-                        <p class="small-para blue-text">a Python program that show a camera stream, detect and highlight hands and gestures</p>
+                        <h3 class="greet-heading blue-text">Hands experiments</h3>
+                        <p class="small-para blue-text">Python programs and 3D printing to detect and replicate hands and gestures</p>
                     </div>
                 </div>
                 <div class="my-col">
-                    <div class="my-card port-card">
+                    <div class="my-card port-card" onclick="window.location.href='./sub_pages/design.html';">
                         <div class="image">
-                            <img src="./images_files/logovideodesign.png" alt="logo/video Image">
+                            <img src="./images_files/design.jpg" alt="logo/video Image">
                         </div>
                         <h3 class="greet-heading blue-text">logo/video design</h3>
                         <p class="small-para blue-text">design of a logo for a building company and a video for a festival</p>
                     </div>
                 </div>
+                
                 <div class="my-col">
-                    <div class="my-card port-card">
+
+                    <div class="my-card port-card" onclick="window.location.href='./sub_pages/entertainment.html';">
                         <div class="image">
-                            <img src="./images_files/cluster.png" alt="cluster of computers Image">
+                            <img src="./images_files/entertainment.jpg" alt="enternainment Image">
                         </div>
-                        <h3 class="greet-heading blue-text">cluster of computers</h3>
-                        <p class="small-para blue-text">control computers by booting on USB keys and control them directly on the network</p>
+                        <h3 class="greet-heading blue-text">participation in the entertainment industry</h3>
+                        <p class="small-para blue-text">participations in shows and enternainment making</p>
                     </div>
+                    
                 </div>
             </div>
         </div>
+        <div class="projects-footing">
+            <h3 class="my-footing text-center">All projects are clickable for more details</h3>
+        </div>
     </section>
+
+
+
+
     <!-- About Section -->
     <section id="about" class="about">
         <div class="about-text">
@@ -349,8 +356,8 @@
                 </div>
                 <div class="details">
                     <h5 class="contact-heading">ADDRESS</h5>
-                    <p class="contact-text">16 Boulevard de Lavoisier</p>
-                    <p>49000 Angers</p>
+                    <p class="contact-text">16, Boulevard de Lavoisier</p>
+                    <p>49 000 Angers</p>
                     <p>France</p>
                 </div>
             </div>
@@ -359,10 +366,10 @@
     <!-- Footer section -->
     <footer class="footer">
         <div class="footer-content text-center">
+            
             <h4>
                 created in 2025, made on earth
             </h4>
-
             <div class="social-links">
                 <div class="footer-menu">
                     <ul class="footer-menu-list">
