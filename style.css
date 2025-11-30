@@ -76,13 +76,14 @@ body {
     display: flex;
     align-items: center;
     background-image: linear-gradient(45deg, #363D73, #2794B3);
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
 }
 .about .about-text {
-    width: 450px;
+    width: 100%;
     color: #fff;
-    padding: 5rem 1rem 5rem 5rem;
+    padding: 5rem 5rem 5rem 5rem;
+
 }
 .about .about-image img {
     height: 400px;
