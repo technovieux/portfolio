@@ -75,12 +75,12 @@ body {
 .about .about-text {
     width: 50%;
     color: #fff;
-    padding: 5rem;
+    padding: 1rem;
     box-sizing: border-box;
 }
 .about .about-image {
     width: 50%;
-    padding: 5rem;
+    padding: 1rem;
     box-sizing: border-box;
 }
 
@@ -318,4 +318,5 @@ body {
     color: #363D73;
 
 }
+
 
