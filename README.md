@@ -1,6 +1,6 @@
 # Portfolio de Mathias Cassegrain
 
-this this github project is my portfolio but can also be used like a template for your own ideas of websites
+this github project is my portfolio but can also be used like a template for your own ideas of websites
 
 ---
 
