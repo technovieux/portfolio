@@ -57,7 +57,7 @@
 
     
     
-    <section id="home" class="hero" style="background-image: url('../images_files/bigbrother.jpg');
+    <section id="home" class="hero" style="background-image: url('../images_files/flipnote.jpg');
                                            background-repeat: no-repeat;
                                            background-size: cover;
                                            background-position: center;
@@ -70,9 +70,9 @@
 
         <div class="intro">
             <div class="headings">
-                <h1 class="my-heading">Big Brother</h1>
+                <h1 class="my-heading">Flipnote</h1>
                 <h4 class="sub-heading">
-                    Smile, you might be recorded
+                    Now we just have to put the show on for real.
                 </h4>
             </div>
         </div>
@@ -83,27 +83,34 @@
         <div class="more-details-text">
             <h1 class="my-heading">More details</h1>
             <p class="lead-para">
-                During my time in Romania, I was asked to develop a Python program that used 
-                computer vision to count people. So I developed this project with a graphical 
-                user interface using CustomTKinter and two detection models: one using deep 
-                learning to detect full bodies and another using Haar cascades to detect faces. 
-                The results are then displayed with green and blue rectangles directly on the image. 
+                Alongside my studies, I have a passion for theater, and I was asked to develop 
+                software to plan a complete production. At the same time, the rise of no-code 
+                development was just beginning, and I wanted to give it a try, which is why I 
+                used Lovable to see what kind of results it would yield. In the end, the result 
+                turned out pretty well, and I continue to improve it constantly. Even though I 
+                didn’t write most of the code myself, I fully understand Node.js and have even 
+                modified parts of it myself.
             </p>
             <p>
-                During this project, I had to manage several aspects, notably the use of 
-                multithreading to prevent the interface from freezing during image processing. 
-                When processing a video, certain frames are intentionally skipped to reduce the 
-                computational load, which is very energy-intensive. The time it takes to display 
-                the image will also increase depending on the number of detected objects. 
+                This web app, with an interface inspired by After Effects, was originally designed 
+                solely for creating 2D and 3D animations, but later on, I wondered if it was 
+                possible to add more features, which led to a fireworks simulation mode, a 
+                DMX control mode with a real DMX communication system accessible via the browser, 
+                a 3D model manager, a drone control system, and a universal mode that combines all 
+                the others, with a physics-based or logic-based option similar to Cisco Packet Tracer.
             </p>
             <p>
-                In addition to detection, it is also possible to track detections using counters 
-                that display the number of faces in real-time or since the start, as well as using 
-                Matplotlib to generate graphs for a more “surveillance-style” look. All this data 
-                can be exported as JSON or CSV for use in an external program.
+                This project is still under development but aims to be as accessible, versatile, 
+                and user-friendly as possible; it is also possible to add your own 3D models, spotlights, 
+                or fireworks. The show can then be exported as a PDF, JPG, or MPEG to keep a record of it. 
+                Additionally, if a user uses their own files, they will be saved with the show and 
+                can be shared directly.
             </p>
             <p>
-                This project is available on GitHub, just <a href="https://github.com/technovieux/big-brother-python" target="_blank" style="color: aliceblue;">here</a>
+                This project is still under development but may be accessible at any time 
+                <a href="https://flipnote-theater.lovable.app/" target="_blank" style="color: aliceblue;">on the website</a>
+                 or the 
+                 <a href="https://github.com/technovieux/flipnote-theater-node" target="_blank" style="color: aliceblue;">github repository</a>
             </p>
 
         </div>
@@ -116,7 +123,7 @@
 
             <h1 class="my-heading">More images</h1>
             
-            <div class="viewer-container" id="visionneuse-bigbrother">
+            <div class="viewer-container" id="visionneuse-flipnote">
   
                 <div class="main-display">
                     <button id="prev-btn" class="nav-btn prev-btn">❮</button> 
@@ -188,19 +195,18 @@
     <script src="viewer.js"></script>
     
     <script>
-        const bigbrotherMedia = [
-            { type: 'image', src: '../images_files/bigbrother.jpg', name: 'aperçu' },
-            { type: 'image', src: '../images_files/bigbrother/loadingscreen.png', name: 'loading screen' },
-            { type: 'image', src: '../images_files/bigbrother/mainwindow1.png', name: 'main window 1' },
-            { type: 'image', src: '../images_files/bigbrother/mainwindow2.png', name: 'main window 2' },
-            { type: 'image', src: '../images_files/bigbrother/exportmessage.png', name: 'export message' },
-            { type: 'image', src: '../images_files/bigbrother/typicaljson.png', name: 'json example' }
+        const flipnoteMedia = [
+            { type: 'image', src: '../images_files/flipnote.jpg', name: 'aperçu' },
+            { type: 'image', src: '../images_files/flipnote/startmenu.png', name: 'start menu' },
+            { type: 'image', src: '../images_files/flipnote/3Dmode.png', name: '3D mode' },
+            { type: 'image', src: '../images_files/flipnote/logicalmode.png', name: 'logical mode' },
+            { type: 'image', src: '../images_files/flipnote/physicalmode.png', name: 'physical mode' }
             
         ];
 
         // Appel de la fonction pour initialiser la visionneuse avec les données spécifiques
         // 'visionneuse-principale' est l'ID du conteneur dans le HTML
-        initMediaViewer(bigbrotherMedia, 'visionneuse-bigbrother');
+        initMediaViewer(flipnoteMedia, 'visionneuse-flipnote');
     </script>
 </body>
 
