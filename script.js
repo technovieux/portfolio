@@ -60,5 +60,18 @@ menuLinks.forEach(link => {
     });
 });
 
+function toggleMoreProjects() {
+    const hiddenProjects = document.getElementById('hiddenProjects');
+    const toggleBtn = document.getElementById('toggleProjectsBtn');
+    
+    if (hiddenProjects.classList.contains('show')) {
+        hiddenProjects.classList.remove('show');
+        toggleBtn.textContent = 'Show More Projects';
+    } else {
+        hiddenProjects.classList.add('show');
+        toggleBtn.textContent = 'Show Less Projects';
+    }
+}
+
 
 
