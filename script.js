@@ -114,7 +114,7 @@ const htbBadges = [
         id: 3,
         name: "macos fundamentals",
         description: "Macos fundamentals",
-        image: "./images_files/htb_badges/macOS_fundamentals.png",
+        image: "./images_files/htb_badges/macos_fundamentals.png",
         year: 2026
     },
     {
